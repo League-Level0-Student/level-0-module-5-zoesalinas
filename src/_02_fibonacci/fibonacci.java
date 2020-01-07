@@ -5,9 +5,13 @@ public static void main(String[] args) {
 	int a = 0;
 	int b = 1;
 	int temp = 0;
-	temp = a;
-	a=b;
-	b=temp;
-	
+	System.out.println(a);
+	System.out.println(b);
+	for (int i = 0; i < 10; i++) {
+	temp = b;
+	b=a+b;
+	a=temp;
+	System.out.println(b);
+	}
 }
 }
